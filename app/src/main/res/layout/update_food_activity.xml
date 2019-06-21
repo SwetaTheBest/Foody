@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewUpdate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:contentDescription="@string/choose_image"
+        tools:srcCompat="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/nameUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="text"
+        android:ems="10"
+        android:labelFor="@id/nameUpdate"
+        android:layout_below="@id/imageViewUpdate"
+        android:layout_centerHorizontal="true"
+        tools:text="@string/name" />
+
+    <EditText
+        android:id="@+id/priceUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="@string/price"
+        android:layout_below="@id/nameUpdate"
+        android:layout_centerHorizontal="true"
+        tools:text="@string/price" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_margin="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceUpdate"
+        android:textColor="@color/colorPrimary"
+        android:background="#0ffff0"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:elevation="4dp"
+        android:text="@string/update"
+        android:layout_centerHorizontal="true"
+        tools:text="@string/update"/>
+
+</RelativeLayout>
